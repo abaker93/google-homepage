@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Home Page</title>
+	<style>
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+		body { line-height: 1; }
+		ol, ul { list-style: none; }
+		blockquote, q { quotes: none; }
+		blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+		table { border-collapse: collapse; border-spacing: 0; }
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			color: rgba(34, 34, 34, 0.75);
+		}
+
+		a {
+			text-decoration: none;
+			color: rgba(34, 34, 34, 0.75);
+		}
+
+		a:hover { text-decoration: underline; }
+
+		header {
+			padding: 15px 20px 15px 5px;
+			position: fixed;
+			box-sizing: border-box;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		ul.menu li {
+			margin: 9.5px 0 9.5px 15px;
+		}
+
+		ul.menu.left {
+			float: left;
+		}
+
+		ul.menu.left li {
+			display: inline-block;
+		}
+
+		ul.menu.right {
+			text-align: right;
+			float: right;
+		}
+
+		ul.menu.right li {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.btn-menu {
+			background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+			background-size: 528px 68px;
+			background-position: -132px -38px;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			opacity: 0.55;
+		}
+
+		.btn-menu:hover {
+			opacity: 1;
+		}
+
+		.btn-sign-in {
+			background: #4285f4;
+			background: linear-gradient(top, #4387FD, #4683EA);
+			color: #FFF;
+			padding: 5px 12px;
+			border: 1px solid #4285f4;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 14px;
+			border-radius: 2px;
+		}
+
+		.btn-sign-in:hover,
+		.btn-sign-in:focus {
+			box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+			text-decoration: none;
+		}
+
+		main {
+			display: grid;
+			align-content: center;
+			justify-items: center;
+			height: 70vh;
+			width: 100%;
+		}
+
+		.logo {
+			height: 92px;
+			margin: 0 auto 30px;
+		}
+
+		.search {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.search svg {
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			fill: #9AA0A6;
+		}
+
+		.search input[type='search'] {
+			min-width: 600px;
+			max-width: 80%;
+			border-radius: 50px;
+			padding: 10px 10px 10px 40px;
+			border: 1px solid #DFE1E5;
+		}
+
+		.search input[type='search']:hover {
+			box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+			border-color: rgba(223, 225, 229, 0);
+		}
+
+		.btn-search {
+			background: #F2F2F2;
+			background: linear-gradient(top,#f5f5f5,#f1f1f1);
+			border-radius: 4px;
+			border: 1px solid #F2F2F2;
+			color: #5F6368;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			padding: 7px 20px;
+			cursor: pointer;
+			display: inline-block;
+			margin: 0 10px;
+		}
+
+		.btn-search:hover {
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			background: #F8F8F8;
+			background: linear-gradient(top, #F8F8F8, #F1F1F1);
+			border: 1px solid #c6c6c6;
+			color: #222;
+		}
+
+		footer {
+			padding: 15px 20px;
+			position: fixed;
+			box-sizing: border-box;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			background: #F2F2F2;
+			border-top: 1px solid #E4E4E4;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<ul class="menu left">
+			<li><a href="">About</a></li>
+			<li><a href="">Store</a></li>
+		</ul>
+		<ul class="menu right">
+			<li><a href="">Gmail</a></li>
+			<li><a href="">Images</a></li>
+			<li><a class="btn-menu" href=""></a></li>
+			<li><a class="btn-sign-in" href="">Sign In</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+		<div class="search">
+			<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+			<input class="search-field" type="search">
+		</div>
+		<div class="search-btns">
+			<button class="btn-search">Google Search</button>
+			<button class="btn-search">I'm Feeling Lucky</button>
+		</div>
+	</main>
+
+	<footer>
+		<ul class="menu left">
+			<li>Advertising</li>
+			<li>Business</li>
+			<li>How Search works</li>
+		</ul>
+		<ul class="menu right">
+			<li>Privacy</li>
+			<li>Terms</li>
+			<li>Settings</li>
+		</ul>
+	</footer>
+</body>
+</html> 
